@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/clear"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="AC" />
+
+            <ImageView
+                android:id="@+id/backspace"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/design_default_color_error"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_backspace_24" />
+
+            <TextView
+                android:id="@+id/modulo"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="%" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="+" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="-" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="*" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/division"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="/" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/adv"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="Adv." />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:height="70dp"
+                android:background="@color/design_default_color_error"
+                android:text="=" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
